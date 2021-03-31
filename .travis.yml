@@ -8,5 +8,5 @@ after_success:
 - export TAG=`if [ "$TRAVIS_BRANCH" == "main" ]; then echo "latest"; else echo $TRAVIS_BRANCH; fi`
 - export IMAGE_NAME=mamathakrishna/sample-app
 - docker build -t $IMAGE_NAME:$COMMIT .
-- docker tag $IMAGE_NAME:$COMMIT $IMAGE_NAME:$TAG
+- docker tag $IMAGE_NAME:$COMMIT $IMAGE_NAME:latest
 - docker push $IMAGE_NAME
