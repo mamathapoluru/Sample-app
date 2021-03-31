@@ -1,1 +1,1 @@
-# Sample-app
+# java-demo-cicd
