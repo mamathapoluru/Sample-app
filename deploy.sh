@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "$KUBERNETES_CLUSTER_CERTIFICATE" | base64 --decode > cert.crt
-/usr/local/bin/kubectl \
+/usr/bin/kubectl \
   --kubeconfig=/dev/null \
   --server=$KUBERNETES_SERVER \
   --certificate-authority=cert.crt \
