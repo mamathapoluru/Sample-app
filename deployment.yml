@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: sample
-        image: nginx:1.14.2
+        image: mamathakrishna/sample-app
         ports:
-        - containerPort: 80
+        - containerPort: 8080
